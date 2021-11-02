@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfThread xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Thread>
+    <Id>4</Id>
+    <Time>233</Time>
+    <Methods>
+      <Method>
+        <ClassName>Foo</ClassName>
+        <MethodName>MyMethod</MethodName>
+        <Time>233</Time>
+        <Methods>
+          <Method>
+            <ClassName>Bar</ClassName>
+            <MethodName>InnerMethod</MethodName>
+            <Time>108</Time>
+            <Methods />
+          </Method>
+        </Methods>
+      </Method>
+    </Methods>
+  </Thread>
+  <Thread>
+    <Id>5</Id>
+    <Time>341</Time>
+    <Methods>
+      <Method>
+        <ClassName>Foo</ClassName>
+        <MethodName>MyMethod</MethodName>
+        <Time>233</Time>
+        <Methods>
+          <Method>
+            <ClassName>Bar</ClassName>
+            <MethodName>InnerMethod</MethodName>
+            <Time>108</Time>
+            <Methods />
+          </Method>
+        </Methods>
+      </Method>
+      <Method>
+        <ClassName>Bar</ClassName>
+        <MethodName>InnerMethod</MethodName>
+        <Time>108</Time>
+        <Methods />
+      </Method>
+    </Methods>
+  </Thread>
+</ArrayOfThread>
+[
+  {
+    "Id": 4,
+    "Time": 233,
+    "Methods": [
+      {
+        "ClassName": "Foo",
+        "MethodName": "MyMethod",
+        "Time": 233,
+        "Methods": [
+          {
+            "ClassName": "Bar",
+            "MethodName": "InnerMethod",
+            "Time": 108,
+            "Methods": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Time": 341,
+    "Methods": [
+      {
+        "ClassName": "Foo",
+        "MethodName": "MyMethod",
+        "Time": 233,
+        "Methods": [
+          {
+            "ClassName": "Bar",
+            "MethodName": "InnerMethod",
+            "Time": 108,
+            "Methods": []
+          }
+        ]
+      },
+      {
+        "ClassName": "Bar",
+        "MethodName": "InnerMethod",
+        "Time": 108,
+        "Methods": []
+      }
+    ]
+  }
+]
